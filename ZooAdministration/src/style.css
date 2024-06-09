@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+}
+
+#zoo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#form-wrapper {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto 20px;
+}
+
+#form-wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form select,
+form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form select:focus,
+form input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+form button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* ENCLOSURE */
+.enclosure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 3rem 0;
+}
+#enclosure-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+#savannah {
+  height: 14rem;
+  width: 14rem;
+  background-color: rgb(252, 210, 41);
+  border-radius: 20px;
+  border: dotted 3px rgb(195, 104, 13);
+}
+
+#aquarium {
+  height: 14rem;
+  width: 14rem;
+  background-color: rgb(252, 210, 41);
+  border-radius: 20px;
+  border: dotted 3px rgb(195, 104, 13);
+}
+
+#jungle {
+  height: 14rem;
+  width: 14rem;
+  background-color: rgb(11, 202, 4);
+  border-radius: 20px;
+  border: dotted 3px rgb(195, 104, 13);
+}
+
+#reptileHouse {
+  height: 14rem;
+  width: 14rem;
+  background-color: rgb(223, 237, 121);
+  border-radius: 20px;
+  border: dotted 3px rgb(195, 104, 13);
+}
+
+#aquarium {
+  height: 14rem;
+  width: 14rem;
+  background-color: rgb(55, 175, 218);
+  border-radius: 20px;
+  border: dotted 3px rgb(13, 104, 195);
+}
+
+.Emoji {
+  font-size: 26px;
+  display: inline-block;
+}
+
+.Emoji:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  transition: opacity 0.3s;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
