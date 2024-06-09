@@ -98,18 +98,6 @@ createAnimalButton?.addEventListener("click", (event: Event) => {
   const specialNeeds = selectSpecialNeeds.value;
   const habitat = selectHabitat.value;
 
-  // if (
-  //   !type ||
-  //   !name ||
-  //   !yearOfBirth ||
-  //   !continent ||
-  //   !specialNeeds ||
-  //   !habitat
-  // ) {
-  //   console.error("Please fill in all fields.");
-  //   return;
-  // }
-
   const animal = createAnimal(
     type,
     name,
