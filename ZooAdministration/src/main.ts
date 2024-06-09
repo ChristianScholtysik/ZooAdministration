@@ -129,7 +129,7 @@ createAnimalButton?.addEventListener("click", (event: Event) => {
         console.log("Savannah Habitat", savannahAnimals);
       }
       if (animal?.enclosureId === EnclosureId.JungleHabitat) {
-        savannahAnimals.push(animal);
+        jungleAnimals.push(animal);
         console.log("Jungle Habitat", jungleAnimals);
       }
       if (animal?.enclosureId === EnclosureId.ReptileHouse) {
