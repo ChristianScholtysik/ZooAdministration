@@ -66,7 +66,6 @@ function displayAnimalInEnclosure() {
       const age = currentYear - animal.yearOfBirth;
       //* Tooltipp
       const tooltip = document.createElement("div");
-      console.log(tooltip);
       tooltip.className = "tooltiptext";
       tooltip.innerHTML = `
         Name: ${animal.name}<br>
@@ -77,7 +76,6 @@ function displayAnimalInEnclosure() {
 
       emojiDiv.appendChild(emoji);
       emojiDiv.appendChild(tooltip);
-      console.log(emojiDiv);
 
       savannahEnclosure.appendChild(emojiDiv);
       //* delete by dblclick
