@@ -60,6 +60,12 @@ const createAnimalButton = document.getElementById(
   "button"
 ) as HTMLInputElement;
 
+const allAnimalsButton = document.getElementById(
+  "allAnimalsBtn"
+) as HTMLButtonElement;
+
+const output = document.getElementById("output") as HTMLElement;
+
 const savannahEnclosure = document.getElementById("savannah") as HTMLElement;
 const jungleEnclosure = document.getElementById("jungle") as HTMLElement;
 const reptileEnclosure = document.getElementById("reptileHouse") as HTMLElement;
@@ -70,6 +76,38 @@ const savannahAnimals: Animal[] = [];
 const jungleAnimals: Animal[] = [];
 const reptileHouseAnimals: Animal[] = [];
 const aquariumAnimals: Animal[] = [];
+
+allAnimalsButton.addEventListener("click", (event: Event) => {
+  event.preventDefault();
+  showAllAnimals();
+});
+function showAllAnimals() {
+  if (output) {
+    allZooAnimals.forEach((animal) => {
+      // const resultField = document.createElement("div");
+      const list = document.createElement("div");
+      list.className = "list";
+      const emoji = document.createElement("div");
+      emoji.innerHTML = animal.emoji;
+      const name = document.createElement("div");
+      name.innerHTML = animal.name;
+      const currentYear = new Date().getFullYear();
+      const age = currentYear - animal.yearOfBirth;
+      const ageDiv = document.createElement("div");
+      ageDiv.innerHTML = age.toString();
+      const origin = document.createElement("div");
+      origin.innerHTML = animal.continent.toString();
+      const enclosure = document.createElement("div");
+      enclosure.innerHTML = animal.enclosureId.toString();
+      list.appendChild(emoji);
+      list.appendChild(name);
+      list.appendChild(ageDiv);
+      list.appendChild(origin);
+      list.appendChild(enclosure);
+      output.appendChild(list);
+    });
+  }
+}
 
 function createAnimal(
   type: string,
