@@ -16,6 +16,7 @@ body {
 
 h1 {
   text-align: center;
+  margin: 3rem 0;
 }
 
 #elephant {
@@ -26,13 +27,13 @@ h1 {
 
 #zoo {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 2rem 5rem;
 }
 
 #form-wrapper {
-  background-color: #fbfbfb;
+  background-color: #ecddc6;
   /* background-image: url(./assests/img/elefantenhaut.jpg);
   background-size: cover; */
   padding: 20px;
@@ -63,25 +64,28 @@ form input {
   width: 100%;
   box-sizing: border-box;
 }
+form select option:hover {
+  background-color: yellow;
+}
 
 form select:focus,
 form input:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #fa6305;
 }
 
 form button {
   padding: 10px;
   font-size: 16px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #fa6305;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: #0056b3;
+  background-color: #b94d0a;
 }
 
 /* ENCLOSURE */
@@ -98,6 +102,7 @@ form button:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   padding: 10px;
+  margin-right: 8rem;
 }
 
 #savannah {

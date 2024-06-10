@@ -1,5 +1,4 @@
 import Animal from "./Animal";
-// import Enclosure from "./Enclosure";
 import EnclosureId from "./EnclosureId";
 import Continent from "./Continent";
 import Lion from "./animalClasses";
@@ -74,7 +73,6 @@ function displayAnimalInEnclosure() {
        Age: ${age}<br>
         Origin: ${animal.continent}<br>
        Special Needs: ${animal.specialNeeds}
-       
        `;
 
       emojiDiv.appendChild(emoji);
@@ -106,9 +104,9 @@ createAnimalButton?.addEventListener("click", (event: Event) => {
     type,
     name,
     yearOfBirth,
-    continent,
+    Number(continent),
     specialNeeds,
-    habitat
+    Number(habitat)
   );
 
   if (animal) {
