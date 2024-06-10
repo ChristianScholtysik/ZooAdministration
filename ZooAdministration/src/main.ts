@@ -61,28 +61,29 @@ function displayAnimalInEnclosure() {
     savannahAnimals.forEach((animal: Animal, index) => {
       const emojiDiv = document.createElement("div");
       emojiDiv.className = "Emoji";
-
       const emoji = document.createElement("div");
       emoji.innerHTML = animal.emoji;
-
+      const currentYear = new Date().getFullYear();
+      const age = currentYear - animal.yearOfBirth;
+      //* Tooltipp
       const tooltip = document.createElement("div");
+      console.log(tooltip);
       tooltip.className = "tooltip";
       tooltip.innerHTML = `
         <strong>Name:</strong> ${animal.name}<br>
-        <strong>Birth Year:</strong> ${animal.yearOfBirth}<br>
+        <strong>Age:</strong> ${age}<br>
         <strong>Continent:</strong> ${animal.continent}<br>
         <strong>Special Needs:</strong> ${animal.specialNeeds}
       `;
-
       emojiDiv.appendChild(emoji);
       emojiDiv.appendChild(tooltip);
 
       savannahEnclosure.appendChild(emojiDiv);
-
+      //* delete by dblclick
       emojiDiv.addEventListener("dblclick", () => {
         savannahAnimals.splice(index, 1);
         displayAnimalInEnclosure();
-        console.log("SavannahHabitat after delete", savannahAnimals);
+        console.log("SavannahHabitat after delete: ", savannahAnimals);
       });
     });
   }
@@ -108,8 +109,19 @@ createAnimalButton?.addEventListener("click", (event: Event) => {
   );
 
   if (animal) {
-    allZooAnimals.push(animal);
-    console.log(allZooAnimals);
+    if (
+      // !type ||
+      !name ||
+      !yearOfBirth ||
+      !continent ||
+      !specialNeeds ||
+      !habitat
+    ) {
+      console.error("All Fields are required");
+    } else {
+      allZooAnimals.push(animal);
+      console.log(allZooAnimals);
+    }
 
     function chooseHabitat() {
       if (animal?.enclosureId === EnclosureId.SavannahHabitat) {

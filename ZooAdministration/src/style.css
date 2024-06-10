@@ -14,6 +14,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 2rem 5rem;
 }
 
 #form-wrapper {
@@ -81,18 +82,15 @@ form button:hover {
   gap: 10px;
   padding: 10px;
 }
+
 #savannah {
   height: 14rem;
   width: 14rem;
-  background-color: rgb(252, 210, 41);
-  border-radius: 20px;
-  border: dotted 3px rgb(195, 104, 13);
-}
-
-#aquarium {
-  height: 14rem;
-  width: 14rem;
-  background-color: rgb(252, 210, 41);
+  /* background-color: rgb(252, 210, 41); */
+  background-image: url(./assests/img/savannah.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 20px;
   border: dotted 3px rgb(195, 104, 13);
 }
@@ -100,7 +98,11 @@ form button:hover {
 #jungle {
   height: 14rem;
   width: 14rem;
-  background-color: rgb(11, 202, 4);
+  background-image: url(./assests/img/jungle.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-color: rgb(11, 202, 4); */
   border-radius: 20px;
   border: dotted 3px rgb(195, 104, 13);
 }
@@ -108,7 +110,12 @@ form button:hover {
 #reptileHouse {
   height: 14rem;
   width: 14rem;
-  background-color: rgb(223, 237, 121);
+
+  background-image: url(./assests/img/desert.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-color: rgb(223, 237, 121); */
   border-radius: 20px;
   border: dotted 3px rgb(195, 104, 13);
 }
@@ -116,7 +123,12 @@ form button:hover {
 #aquarium {
   height: 14rem;
   width: 14rem;
-  background-color: rgb(55, 175, 218);
+  background-image: url(./assests/img/aquarium.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /* background-color: rgb(55, 175, 218); */
   border-radius: 20px;
   border: dotted 3px rgb(13, 104, 195);
 }
