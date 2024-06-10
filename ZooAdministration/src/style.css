@@ -4,10 +4,24 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+/* main {
+  background-image: url(./assests/img/zoo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
 h1 {
   text-align: center;
+}
+
+#elephant {
+  height: 100px;
+  width: auto;
+  color: white;
 }
 
 #zoo {
@@ -18,12 +32,15 @@ h1 {
 }
 
 #form-wrapper {
-  background-color: #fff;
+  background-color: #fbfbfb;
+  /* background-image: url(./assests/img/elefantenhaut.jpg);
+  background-size: cover; */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   margin: 0 auto 20px;
+  text-align: center;
 }
 
 #form-wrapper h2 {
@@ -74,18 +91,18 @@ form button:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 #enclosure-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 30px;
   padding: 10px;
 }
 
 #savannah {
   height: 14rem;
-  width: 14rem;
+  width: 18rem;
   /* background-color: rgb(252, 210, 41); */
   background-image: url(./assests/img/savannah.jpg);
   background-repeat: no-repeat;
@@ -97,7 +114,7 @@ form button:hover {
 
 #jungle {
   height: 14rem;
-  width: 14rem;
+  width: 18rem;
   background-image: url(./assests/img/jungle.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -109,7 +126,7 @@ form button:hover {
 
 #reptileHouse {
   height: 14rem;
-  width: 14rem;
+  width: 18rem;
 
   background-image: url(./assests/img/desert.jpg);
   background-repeat: no-repeat;
@@ -122,7 +139,7 @@ form button:hover {
 
 #aquarium {
   height: 14rem;
-  width: 14rem;
+  width: 18rem;
   background-image: url(./assests/img/aquarium.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -134,16 +151,61 @@ form button:hover {
 }
 
 .Emoji {
-  font-size: 26px;
+  font-size: 36px;
+  display: inline-block;
+}
+/* 
+.Emoji:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+} */
+.tooltip {
+  position: relative;
   display: inline-block;
 }
 
-.Emoji:hover .tooltip {
+/* Tooltip text */
+.tooltip .tooltiptext {
+  font-size: small;
+  visibility: hidden;
+  width: 160px;
+  background-color: #fa6305;
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .Emoji::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.Emoji:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
 
-.tooltip {
+/* .tooltip {
   visibility: hidden;
   opacity: 0;
   background-color: #333;
@@ -158,9 +220,9 @@ form button:hover {
   transform: translateX(-50%);
   width: 150px;
   transition: opacity 0.3s;
-}
+} */
 
-.tooltip::after {
+/* .tooltip::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -169,4 +231,4 @@ form button:hover {
   border-width: 5px;
   border-style: solid;
   border-color: #333 transparent transparent transparent;
-}
+} */

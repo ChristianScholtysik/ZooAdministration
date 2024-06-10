@@ -1,5 +1,5 @@
 import Animal from "./Animal";
-import Enclosure from "./Enclosure";
+// import Enclosure from "./Enclosure";
 import EnclosureId from "./EnclosureId";
 import Continent from "./Continent";
 import Lion from "./animalClasses";
@@ -60,7 +60,7 @@ function displayAnimalInEnclosure() {
     savannahEnclosure.innerHTML = "";
     savannahAnimals.forEach((animal: Animal, index) => {
       const emojiDiv = document.createElement("div");
-      emojiDiv.className = "Emoji";
+      emojiDiv.className = "Emoji tooltip";
       const emoji = document.createElement("div");
       emoji.innerHTML = animal.emoji;
       const currentYear = new Date().getFullYear();
@@ -68,15 +68,18 @@ function displayAnimalInEnclosure() {
       //* Tooltipp
       const tooltip = document.createElement("div");
       console.log(tooltip);
-      tooltip.className = "tooltip";
+      tooltip.className = "tooltiptext";
       tooltip.innerHTML = `
-        <strong>Name:</strong> ${animal.name}<br>
-        <strong>Age:</strong> ${age}<br>
-        <strong>Continent:</strong> ${animal.continent}<br>
-        <strong>Special Needs:</strong> ${animal.specialNeeds}
-      `;
+        Name: ${animal.name}<br>
+       Age: ${age}<br>
+        Origin: ${animal.continent}<br>
+       Special Needs: ${animal.specialNeeds}
+       
+       `;
+
       emojiDiv.appendChild(emoji);
       emojiDiv.appendChild(tooltip);
+      console.log(emojiDiv);
 
       savannahEnclosure.appendChild(emojiDiv);
       //* delete by dblclick

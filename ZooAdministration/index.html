@@ -2,100 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./public/elephant.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
     <title>ZooAdministration</title>
   </head>
   <body>
-    <h1>🐘 Zoo Administration 🐒</h1>
-    <div id="zoo">
-      <div id="form-wrapper">
-        <h2>Add an animal to the zoo</h2>
-        <form action="">
-          <select name="" id="select-animal" required>
-            <option value="Lion">🦁 Lion</option>
-            <option value="Elephant">🐘 Elephant</option>
-            <option value="Bear">🐻 Bear</option>
-            <option value="Monkey">🐒 Monkey</option>
-            <option value="Dolphin">🐬 Dolphin</option>
-            <option value="Snake">🐍 Snake</option>
-            <option value="Turtle">🐢 Turtle</option>
-            <option value="Crocodile">🐊 Crocodile</option>
-            <option value="Parrot">🐦 Parrot</option>
-            <option value="Eagle">🦅 Eagle</option>
-            <option value="Macaw">🦜 Macaw</option>
-            <option value="Fish">🐠 Fish</option>
-            <option value="Trout">🐟 Trout</option>
-            <option value="Shark">🦈 Shark</option>
-            <option value="Octopus">🐙 Octopus</option>
-            <option value="Squid">🦑 Squid</option>
-            <option value="Frog">🐸 Frog</option>
-            <option value="Clownfish">🤡 Clownfish</option>
-            <option value="Pufferfish">🐡 Pufferfish</option>
-            <option value="Camel">🐫 Camel</option>
-            <option value="Toucan">🐦 Toucan</option>
-            <option value="Flamingo">🦢 Flamingo</option>
-          </select>
-          <input
-            type="text"
-            name=""
-            id="nameInput"
-            placeholder="Name of the animal"
-            required />
-          <input
-            type="number"
-            name=""
-            id="birthYearInput"
-            placeholder="Birthyear 1970 - 2024"
-            min="1970"
-            max="2024"
-            required />
-          <select name="" id="select-continent" required>
-            <option value="">Choose Continent</option>
-            <option value="Africa">Africa</option>
-            <option value="Asia">Asia</option>
-            <option value="Europe">Europe</option>
-            <option value="NorthAmerica">North America</option>
-            <option value="SouthAmerica">South America</option>
-            <option value="Australia">Australia</option>
-            <option value="Antarctica">Antarctica</option>
-          </select>
-          <select name="" id="select-specialNeeds" required>
-            <option value="">Choose Need</option>
-            <option value="meat">Meat</option>
-            <option value="plant">Plants</option>
-            <option value="fish">Fish</option>
-          </select>
-          <select name="" id="select-enclosure" required>
-            <option value="">Choose Habitat</option>
-            <option value="Savannah">Savannah Habitat</option>
-            <option value="Jungle">Jungle Habitat</option>
-            <option value="Aqua">Aquarium</option>
-            <option value="Reptile">Reptile House</option>
-          </select>
-          <button type="submit" id="button">Create animal</button>
-        </form>
+    <main>
+      <h1>🐘 Zoo Administration 🐒</h1>
+      <div id="zoo">
+        <div id="form-wrapper">
+          <img src="./public/elephant.svg" alt="" id="elephant" />
+          <h2>Add an animal to the zoo</h2>
+          <form action="">
+            <select name="" id="select-animal" required>
+              <option value="Lion">🦁 Lion</option>
+              <option value="Elephant">🐘 Elephant</option>
+              <option value="Bear">🐻 Bear</option>
+              <option value="Monkey">🐒 Monkey</option>
+              <option value="Dolphin">🐬 Dolphin</option>
+              <option value="Snake">🐍 Snake</option>
+              <option value="Turtle">🐢 Turtle</option>
+              <option value="Crocodile">🐊 Crocodile</option>
+              <option value="Parrot">🐦 Parrot</option>
+              <option value="Eagle">🦅 Eagle</option>
+              <option value="Macaw">🦜 Macaw</option>
+              <option value="Fish">🐠 Fish</option>
+              <option value="Trout">🐟 Trout</option>
+              <option value="Shark">🦈 Shark</option>
+              <option value="Octopus">🐙 Octopus</option>
+              <option value="Squid">🦑 Squid</option>
+              <option value="Frog">🐸 Frog</option>
+              <option value="Clownfish">🤡 Clownfish</option>
+              <option value="Pufferfish">🐡 Pufferfish</option>
+              <option value="Camel">🐫 Camel</option>
+              <option value="Toucan">🐦 Toucan</option>
+              <option value="Flamingo">🦢 Flamingo</option>
+            </select>
+            <input
+              type="text"
+              name=""
+              id="nameInput"
+              placeholder="Name of the animal"
+              required />
+            <input
+              type="number"
+              name=""
+              id="birthYearInput"
+              placeholder="Birthyear 1970 - 2024"
+              min="1970"
+              max="2024"
+              required />
+            <select name="" id="select-continent" required>
+              <option value="">Choose Continent</option>
+              <option value="Africa">Africa</option>
+              <option value="Asia">Asia</option>
+              <option value="Europe">Europe</option>
+              <option value="NorthAmerica">North America</option>
+              <option value="SouthAmerica">South America</option>
+              <option value="Australia">Australia</option>
+              <option value="Antarctica">Antarctica</option>
+            </select>
+            <select name="" id="select-specialNeeds" required>
+              <option value="">Choose Need</option>
+              <option value="meat">Meat</option>
+              <option value="plant">Plants</option>
+              <option value="fish">Fish</option>
+            </select>
+            <select name="" id="select-enclosure" required>
+              <option value="">Choose Habitat</option>
+              <option value="Savannah">Savannah Habitat</option>
+              <option value="Jungle">Jungle Habitat</option>
+              <option value="Aqua">Aquarium</option>
+              <option value="Reptile">Reptile House</option>
+            </select>
+            <button type="submit" id="button">Create animal</button>
+          </form>
+        </div>
+        <div id="enclosure-wrapper">
+          <div class="enclosure">
+            <h2>🌴 Savannah Habitat 🌴</h2>
+            <div id="savannah"></div>
+          </div>
+          <div class="enclosure">
+            <h2>🌳 Jungle Habitat🌳</h2>
+            <div id="jungle"></div>
+          </div>
+          <div class="enclosure">
+            <h2>🌵 Reptile House 🌵</h2>
+            <div id="reptileHouse"></div>
+          </div>
+          <div class="enclosure">
+            <h2>🪸 Aquarium 🪸</h2>
+            <div id="aquarium"></div>
+          </div>
+        </div>
       </div>
-      <div id="enclosure-wrapper">
-        <div class="enclosure">
-          <h2>🌴 Savannah Habitat 🌴</h2>
-          <div id="savannah"></div>
-        </div>
-        <div class="enclosure">
-          <h2>🌳 Jungle Habitat🌳</h2>
-          <div id="jungle"></div>
-        </div>
-        <div class="enclosure">
-          <h2>🌵 Reptile House 🌵</h2>
-          <div id="reptileHouse"></div>
-        </div>
-        <div class="enclosure">
-          <h2>🪸 Aquarium 🪸</h2>
-          <div id="aquarium"></div>
-        </div>
-      </div>
-    </div>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
