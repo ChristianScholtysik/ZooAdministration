@@ -64,7 +64,7 @@ const allAnimalsButton = document.getElementById(
   "allAnimalsBtn"
 ) as HTMLButtonElement;
 
-const output = document.getElementById("output") as HTMLElement;
+const outputField = document.getElementById("outputField") as HTMLElement;
 
 const savannahEnclosure = document.getElementById("savannah") as HTMLElement;
 const jungleEnclosure = document.getElementById("jungle") as HTMLElement;
@@ -82,31 +82,45 @@ allAnimalsButton.addEventListener("click", (event: Event) => {
   showAllAnimals();
 });
 function showAllAnimals() {
+  const output = document.createElement("div");
+  output.className = "output";
   if (output) {
     allZooAnimals.forEach((animal) => {
-      // const resultField = document.createElement("div");
       const list = document.createElement("div");
       list.className = "list";
       const emoji = document.createElement("div");
       emoji.innerHTML = animal.emoji;
       const name = document.createElement("div");
-      name.innerHTML = animal.name;
+      name.innerHTML = `Name: ${animal.name}`;
       const currentYear = new Date().getFullYear();
       const age = currentYear - animal.yearOfBirth;
       const ageDiv = document.createElement("div");
-      ageDiv.innerHTML = age.toString();
+      ageDiv.innerHTML = `Age: ${age.toString()}`;
       const origin = document.createElement("div");
-      origin.innerHTML = animal.continent.toString();
+      origin.innerHTML = `Origin: ${animal.continent}`;
       const enclosure = document.createElement("div");
-      enclosure.innerHTML = animal.enclosureId.toString();
+      enclosure.innerHTML = `Enclosure: ${animal.enclosureId.toString()}`;
+      const changeButton = document.createElement("Button");
+      changeButton.className = "changeBtn";
+      changeButton.innerHTML = " Change Animal Data";
       list.appendChild(emoji);
       list.appendChild(name);
       list.appendChild(ageDiv);
       list.appendChild(origin);
       list.appendChild(enclosure);
+      list.appendChild(changeButton);
       output.appendChild(list);
+      outputField?.appendChild(output);
+
+      changeButton.addEventListener("click", () => {
+        changeAnimalData();
+      });
     });
   }
+}
+
+function changeAnimalData() {
+  console.log("Hello");
 }
 
 function createAnimal(
@@ -308,6 +322,8 @@ function displayAnimalInEnclosure() {
       });
     });
   }
+
+  //TODO: DRY beachten: in methode auslagern:
 
   if (jungleEnclosure && jungleAnimals) {
     jungleEnclosure.innerHTML = "";
