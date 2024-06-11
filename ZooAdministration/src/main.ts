@@ -257,7 +257,7 @@ function displayAnimalInEnclosure(): void {
       const age = currentYear - animal.yearOfBirth;
       //* Tooltipp
       const tooltip = document.createElement("div");
-      tooltip.className = "tooltiptext";
+      tooltip.className = "savannahtooltip tooltiptext";
       tooltip.innerHTML = `
           Name: ${animal.name}<br>
          Age: ${age}<br>
@@ -289,7 +289,7 @@ function displayAnimalInEnclosure(): void {
       const age = currentYear - animal.yearOfBirth;
       //* Tooltipp
       const tooltip = document.createElement("div");
-      tooltip.className = "tooltiptext";
+      tooltip.className = "jungletooltip  tooltiptext";
       tooltip.innerHTML = `
           Name: ${animal.name}<br>
          Age: ${age}<br>
@@ -321,7 +321,7 @@ function displayAnimalInEnclosure(): void {
       const age = currentYear - animal.yearOfBirth;
       //* Tooltipp
       const tooltip = document.createElement("div");
-      tooltip.className = "tooltiptext";
+      tooltip.className = "reptiletooltip  tooltiptext";
       tooltip.innerHTML = `
           Name: ${animal.name}<br>
          Age: ${age}<br>
@@ -355,7 +355,7 @@ function displayAnimalInEnclosure(): void {
       const age = currentYear - animal.yearOfBirth;
       //* Tooltipp
       const tooltip = document.createElement("div");
-      tooltip.className = "tooltiptext";
+      tooltip.className = "aquariumtooltip tooltiptext";
       tooltip.innerHTML = `
           Name: ${animal.name}<br>
          Age: ${age}<br>
