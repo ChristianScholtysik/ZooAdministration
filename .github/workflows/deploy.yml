@@ -4,11 +4,7 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-<<<<<<< HEAD
     branches: ["main"]
-=======
-    branches: ['main']
->>>>>>> 0ca919e466682535d2a453484f2b4f1dd6000346
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -21,11 +17,7 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-<<<<<<< HEAD
   group: "pages"
-=======
-  group: 'pages'
->>>>>>> 0ca919e466682535d2a453484f2b4f1dd6000346
   cancel-in-progress: true
 
 jobs:
@@ -42,11 +34,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-<<<<<<< HEAD
           cache: "npm"
-=======
-          cache: 'npm'
->>>>>>> 0ca919e466682535d2a453484f2b4f1dd6000346
       - name: Install dependencies
         run: npm ci
       - name: Build
@@ -57,11 +45,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist folder
-<<<<<<< HEAD
           path: "./dist"
-=======
-          path: './dist'
->>>>>>> 0ca919e466682535d2a453484f2b4f1dd6000346
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
