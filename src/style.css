@@ -7,13 +7,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* main {
-  background-image: url(./assests/img/zoo.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
 h1 {
   text-align: center;
   margin: 3rem 0;
@@ -34,8 +27,6 @@ h1 {
 
 #form-wrapper {
   background-color: #ecddc6;
-  /* background-image: url(./assests/img/elefantenhaut.jpg);
-  background-size: cover; */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -126,7 +117,6 @@ form button:hover {
 #savannah {
   height: 14rem;
   width: 18rem;
-  /* background-color: rgb(252, 210, 41); */
   background-image: url(./assests/img/savannah.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -142,7 +132,6 @@ form button:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* background-color: rgb(11, 202, 4); */
   border-radius: 20px;
   border: dotted 3px rgb(195, 104, 13);
 }
@@ -155,7 +144,6 @@ form button:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* background-color: rgb(223, 237, 121); */
   border-radius: 20px;
   border: dotted 3px rgb(195, 104, 13);
 }
@@ -167,7 +155,6 @@ form button:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* background-color: rgb(55, 175, 218); */
   border-radius: 20px;
   border: dotted 3px rgb(13, 104, 195);
 }
@@ -253,7 +240,6 @@ form button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: rgba(110, 62, 10, 0.649); */
   background: rgba(31, 31, 31, 0.758);
   z-index: 1;
 }
@@ -264,29 +250,10 @@ form button:hover {
   padding: 20px;
 }
 
-/*#outputField {
-   width: auto;
-  height: auto; */
-/* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr); */
-/* background-color: rgb(228, 218, 193); */
-
-/* color: #555;
-  z-index: 1;
-  padding: 20px 20px;
-  border-radius: 15px;
-  border: solid red 4px; 
-}*/
-
 .output {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   background-color: white;
   padding: 20px 20px;
   border-radius: 15px;
